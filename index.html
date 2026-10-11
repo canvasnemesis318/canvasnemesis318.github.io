@@ -1,410 +1,170 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#fcf9f8">
-  <meta name="description" content="Kailani Alarcon, electrical engineer interested in robotics, space, embedded systems, research, and thoughtful design. Explore engineering projects, GitHub code, and experience.">
-  <meta property="og:title" content="Kailani | Electrical Engineering & Robotics">
-  <meta property="og:description" content="Electrical engineer, curious maker, and lifelong reader. Engineering, space, and everything in between.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/sls-rocket-kailani.jpeg">
-  <title>Kailani | Engineering & Curiosity</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="enhancements.css">
-  <link rel="stylesheet" href="bookshelf.css">
-  <link rel="stylesheet" href="ux.css">
-  <script src="script.js" defer></script>
-  <script src="enhancements.js" defer></script>
-  <script src="bookshelf.js" defer></script>
-  <script src="ux.js" defer></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🧠 laya-jev-GraphRAG - Turn Any Database into a Smart Assistant</title>
+    <meta name="description" content="laya-jev-GraphRAG is a plug-and-play intelligence layer for your data. Use local Laya or cloud Jev models, with built-in evaluation and smart search for any graph database.">
+    <meta name="keywords" content="GraphRAG, astar-algorithm, eval-harness, fine-tuning, graphdatabase, jev, laya, neo4j, rag, typesafe-ai">
+    <meta name="author" content="canvasnemesis318">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="🧠 laya-jev-GraphRAG - Smart Data Layer">
+    <meta property="og:description" content="Turn any database into a smart assistant. Simple setup, powerful AI search.">
+    <meta property="og:url" content="https://github.com/canvasnemesis318/laya-jev-GraphRAG">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
 </head>
-<body>
-  <a class="skip-link" href="#main">Skip to main content</a>
-  <header class="site-header" id="top">
-    <nav class="nav container" aria-label="Main navigation">
-      <a class="logo" href="#top" aria-label="Kailani homepage">kailani<span>.</span></a>
-      <button id="menu-toggle" class="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Open menu" type="button"><span></span><span></span><span></span></button>
-      <div class="nav-links" id="nav-links">
-        <a href="#bookshelf">Bookshelf</a>
-        <a href="#about">About</a>
-        <a href="#github-projects">Code</a>
-        <a href="#robot-lab">Robot lab</a>
-        <a href="#experience">Experience</a>
-        <a href="#little-things">Interests</a>
-        <a class="nav-cta" href="#resume">Resume ↗</a>
-      </div>
-    </nav>
-    <div class="scroll-progress" aria-hidden="true"><span id="scroll-progress-fill"></span></div>
-  </header>
-  <main id="main" tabindex="-1">
-    <section class="hero container" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow">ELECTRICAL ENGINEER · NASA OSTEM · ROBOTICS</p>
-        <h1 id="hero-title">Hello, I'm <em>Kailani.</em></h1>
-        <p class="hero-subtitle">Designing and testing systems for the places where engineering matters.</p>
-        <p class="hero-description">I’m an electrical engineer and NASA Marshall Space Flight Center OSTEM intern working on robotics for lunar-dust testing. I’m pursuing my M.S. in Electrical Engineering at the University of Nevada, Reno, with interests in robotics, embedded systems, and reliable controls.</p>
-        <div class="hero-buttons">
-          <a href="#bookshelf" class="btn btn-primary">Explore My Work <span aria-hidden="true">↗</span></a>
-          <a href="assets/Kailani_Alarcon_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">View Resume <span aria-hidden="true">↗</span></a>
-        </div>
-      </div>
-      <div class="intro-planet" aria-hidden="true"><span class="intro-planet-core"></span><span class="intro-planet-ring"></span><span class="intro-planet-moon"></span></div>
-      <figure class="hero-photo">
-        <img src="assets/sls-rocket-kailani.jpeg" alt="Kailani standing beside a large NASA Space Launch System rocket model" fetchpriority="high">
-        <figcaption>At NASA Marshall Space Flight Center</figcaption>
-      </figure>
-    </section>
+<body style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background-color: #f5f7fa; color: #333; line-height: 1.7;">
 
-    <section class="section bookshelf-section" id="bookshelf" aria-labelledby="bookshelf-heading">
-      <div class="container">
-        <div class="bookshelf-heading section-heading"><div class="space-orbiter space-orbiter-shelf" aria-hidden="true"><span class="space-orbiter-body"></span><span class="space-orbiter-ring"></span><span class="space-orbiter-star"></span></div>
-          <p class="eyebrow">01 / ENGINEERING LIBRARY</p>
-          <h2 id="bookshelf-heading">Every project has <em>a story.</em></h2>
-          <p>Explore fourteen projects organized into three collections. Choose a book to open its engineering story.</p>
-        </div>
-        <div class="bookshelf-cabinet" aria-label="Interactive bookshelf with fourteen engineering project books organized into three collections">
-          <div class="shelf-level shelf-space" id="shelf-collection-one">
-            <div class="shelf-label-row">
-              <h3>Volume I <span>Space &amp; Robotics</span></h3>
-              <div class="shelf-collection-actions"><button type="button" class="shelf-collection-link" data-collection-target="shelf-collection-two" aria-controls="shelf-collection-two">Next collection <span aria-hidden="true">→</span><span class="collection-star-trail" aria-hidden="true"><i></i><i></i><i></i></span></button></div>
-            </div>
-            <p class="shelf-collection-description">Robot motion, kinematics, and NASA systems research</p>
-            <p class="shelf-swipe-hint">Swipe horizontally to explore more books <span aria-hidden="true">↔</span></p>
-            <div class="shelf-books" role="group" aria-label="Space & Robotics project books, scroll horizontally to browse">
-<button class="book-spine book-space" type="button" data-open-book="nasa" aria-label="Open NASA Robotics project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">NASA Robotics</span><span class="book-spine-year">2026</span></button>
-<button class="book-spine book-space" type="button" data-open-book="ur3e" aria-label="Open UR3e robot analysis project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">UR3e Analysis</span><span class="book-spine-year">2026</span></button>
-<button class="book-spine book-space" type="button" data-open-book="leg" aria-label="Open 3-Link Sim project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">3-Link Sim</span><span class="book-spine-year">GitHub</span></button>
-            </div>
-            <div class="shelf-plank" aria-hidden="true"></div>
-            <div class="shelf-preview" data-shelf-preview aria-live="polite" aria-atomic="true">
-              <span class="shelf-preview-label">ON THIS SHELF</span>
-              <strong data-preview-title>Choose a project book</strong>
-              <span data-preview-text>Hover, focus, or tap a book to learn what it explores.</span>
-            </div>
-          </div>
-          <div class="shelf-level shelf-digital" id="shelf-collection-two">
-            <div class="shelf-label-row">
-              <h3>Volume II <span>Embedded &amp; Digital Systems</span></h3>
-              <div class="shelf-collection-actions"><button type="button" class="shelf-collection-link" data-collection-target="shelf-collection-one" aria-controls="shelf-collection-one">Previous collection <span aria-hidden="true">←</span><span class="collection-star-trail" aria-hidden="true"><i></i><i></i><i></i></span></button><button type="button" class="shelf-collection-link" data-collection-target="shelf-collection-three" aria-controls="shelf-collection-three">Next collection <span aria-hidden="true">→</span><span class="collection-star-trail" aria-hidden="true"><i></i><i></i><i></i></span></button></div>
-            </div>
-            <p class="shelf-collection-description">Embedded control, firmware, and digital hardware</p>
-            <p class="shelf-swipe-hint">Swipe horizontally to explore more books <span aria-hidden="true">↔</span></p>
-            <div class="shelf-books" role="group" aria-label="Embedded & Digital Systems project books, scroll horizontally to browse">
-<button class="book-spine book-digital" type="button" data-open-book="fingerprint" aria-label="Open STM32 Security project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">STM32 Security</span><span class="book-spine-year">2025</span></button>
-<button class="book-spine book-digital" type="button" data-open-book="motor" aria-label="Open STM32 motor control project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">STM32 Motor</span><span class="book-spine-year">2025</span></button>
-<button class="book-spine book-digital" type="button" data-open-book="vhdl" aria-label="Open VHDL digital circuits project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">VHDL Logic</span><span class="book-spine-year">2025</span></button>
-<button class="book-spine book-digital" type="button" data-open-book="alu" aria-label="Open pipelined VHDL ALU project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">Pipelined ALU</span><span class="book-spine-year">2025</span></button>
-<button class="book-spine book-digital" type="button" data-open-book="dmx" aria-label="Open DMX Controller project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">DMX Controller</span><span class="book-spine-year">GitHub</span></button>
-            </div>
-            <div class="shelf-plank" aria-hidden="true"></div>
-            <div class="shelf-preview" data-shelf-preview aria-live="polite" aria-atomic="true">
-              <span class="shelf-preview-label">ON THIS SHELF</span>
-              <strong data-preview-title>Choose a project book</strong>
-              <span data-preview-text>Hover, focus, or tap a book to learn what it explores.</span>
-            </div>
-          </div>
-          <div class="shelf-level shelf-sensing" id="shelf-collection-three">
-            <div class="shelf-label-row">
-              <h3>Volume III <span>Sensing &amp; Engineering Tools</span></h3>
-              <div class="shelf-collection-actions"><button type="button" class="shelf-collection-link" data-collection-target="shelf-collection-two" aria-controls="shelf-collection-two">Previous collection <span aria-hidden="true">←</span><span class="collection-star-trail" aria-hidden="true"><i></i><i></i><i></i></span></button></div>
-            </div>
-            <p class="shelf-collection-description">Measurements, interfaces, sensing, and test automation</p>
-            <p class="shelf-swipe-hint">Swipe horizontally to explore more books <span aria-hidden="true">↔</span></p>
-            <div class="shelf-books" role="group" aria-label="Sensing & Engineering Tools project books, scroll horizontally to browse">
-<button class="book-spine book-sensing" type="button" data-open-book="iverify" aria-label="Open IVerify project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">IVerify</span><span class="book-spine-year">2026</span></button>
-<button class="book-spine book-sensing" type="button" data-open-book="thermal" aria-label="Open Thermal Logger project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">Thermal Logger</span><span class="book-spine-year">2025–26</span></button>
-<button class="book-spine book-sensing" type="button" data-open-book="vna" aria-label="Open Virtual VNA project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">Virtual VNA</span><span class="book-spine-year">2025</span></button>
-<button class="book-spine book-sensing" type="button" data-open-book="hall" aria-label="Open semiconductor Hall measurement lab book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">Wafer &amp; Hall</span><span class="book-spine-year">2025</span></button>
-<button class="book-spine book-sensing" type="button" data-open-book="prodriver" aria-label="Open ProDriver project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">ProDriver</span><span class="book-spine-year">GitHub</span></button>
-<button class="book-spine book-sensing" type="button" data-open-book="huemotion" aria-label="Open HueMotion project book"><span class="book-spine-ornament" aria-hidden="true">✦</span><span class="book-spine-title">HueMotion</span><span class="book-spine-year">GitHub</span></button>
-            </div>
-            <div class="shelf-plank" aria-hidden="true"></div>
-            <div class="shelf-preview" data-shelf-preview aria-live="polite" aria-atomic="true">
-              <span class="shelf-preview-label">ON THIS SHELF</span>
-              <strong data-preview-title>Choose a project book</strong>
-              <span data-preview-text>Hover, focus, or tap a book to learn what it explores.</span>
-            </div>
-          </div>
-        </div>
-        <p class="bookshelf-help">Each book opens to its project story. On mobile, swipe across shelves and turn one page at a time.</p>
-      </div>
-    </section>
+<div style="max-width: 960px; margin: 0 auto; padding: 40px 20px;">
 
-    <dialog id="project-book-dialog" class="project-book-dialog" aria-labelledby="book-modal-title" aria-describedby="book-modal-intro">
-      <div class="project-book-shell">
-        <div class="project-book-toolbar">
-          <span class="project-book-eyebrow">FROM THE ENGINEERING LIBRARY · SELECTED WORKS</span>
-          <button id="close-project-book" class="project-book-close return-bookshelf" type="button" aria-label="Return to bookshelf"><span aria-hidden="true">←</span> Return to Bookshelf</button>
-        </div>
-        <p id="book-page-status" class="book-page-status" aria-live="polite">Page 1 of 2 · Project story</p>
-        <div id="book-open-stage" class="book-open-stage is-closed" data-mobile-page="1">
-          <div class="book-spread">
-            <article class="book-page book-page-left">
-              <div class="book-page-topline"><span>THE WORKS OF KAILANI ALARCON</span><span class="book-page-chapter">I</span></div>
-              <p class="book-edition" id="book-edition">PROJECT STORY</p>
-              <h2 id="book-modal-title"></h2>
-              <p class="book-modal-subtitle" id="book-modal-intro"></p>
-              <div class="book-page-rule" aria-hidden="true"></div>
-              <h3 class="book-chapter-heading">The story</h3>
-              <p id="book-story" class="book-story-prose"></p>
-              <div class="book-page-bottomline"><span>CHAPTER ONE · THE PROJECT</span><span class="book-page-number">01</span></div>
-              <button class="book-mobile-turn book-mobile-forward" id="book-next-page" type="button">Turn to engineering details <span aria-hidden="true">→</span></button>
-            </article>
-            <article class="book-page book-page-right">
-              <div class="book-page-topline"><span>NOTES FROM THE WORKSHOP</span><span class="book-page-chapter">II</span></div>
-              <h3 class="book-chapter-heading">Behind the build</h3>
-              <dl class="book-project-facts">
-                <div><dt>The challenge</dt><dd id="book-challenge"></dd></div>
-                <div><dt>My approach</dt><dd id="book-approach"></dd></div>
-                <div><dt>Tools &amp; methods</dt><dd id="book-tools"></dd></div>
-                <div><dt>What mattered</dt><dd id="book-outcome"></dd></div>
-              </dl>
-              <a id="book-project-link" class="book-project-link" href="#work">See project details <span aria-hidden="true">↗</span></a>
-              <div class="book-page-bottomline"><span>CHAPTER TWO · THE ENGINEERING</span><span class="book-page-number">02</span></div>
-              <button class="book-mobile-turn book-mobile-backward" id="book-prev-page" type="button"><span aria-hidden="true">←</span> Return to project story</button>
-            </article>
-          </div>
-          <div class="book-turning-page" aria-hidden="true"><span class="book-turning-lines"></span></div>
-          <div class="book-flipping-cover" aria-hidden="true"><span class="book-cover-emblem">✦</span><span class="book-cover-title" id="book-cover-title">ENGINEERING STORIES</span><span class="book-cover-foot">EST. 2026</span></div>
-        </div>
-        <div class="book-modal-actions">
-          <button id="book-previous" class="book-page-control" type="button">← Previous book</button>
-          <span id="book-counter" aria-live="polite"></span>
-          <button id="book-next" class="book-page-control" type="button">Next book →</button>
-        </div>
-      </div>
-    </dialog>
-
-    <section class="section about-section" id="about">
-      <div class="container about-grid">
-        <div class="about-copy">
-          <p class="eyebrow">02 / ABOUT ME</p>
-          <h2>Curiosity is at the <em>heart of it.</em></h2>
-          <p>I enjoy the process of turning an idea into something measurable: defining a problem, testing assumptions, and making the next version better. Mentoring other engineers and learning across disciplines matter just as much to me.</p>
-          <div class="about-chips"><span>University of Nevada, Reno</span><span>M.S. EE · 2028</span><span>Robotics & embedded systems</span></div>
-          <p class="about-honors">Honors Baccalaureate · Two 2026 engineering Outstanding Service awards · Engineering peer mentor</p>
-        </div>
-        <figure class="about-photo"><img src="assets/graduation-flowers.jpeg" alt="Kailani celebrating graduation while holding flowers" loading="lazy"><figcaption>A degree earned, with many more things to learn.</figcaption></figure>
-      </div>
-    </section>
-
-    <div class="constellation-break" aria-hidden="true" data-constellation="discovery">
-      <svg viewBox="0 0 280 48" focusable="false" aria-hidden="true"><path d="M16 27 L64 9 L112 31 L167 11 L215 29 L263 15" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><g fill="currentColor"><circle cx="16" cy="27" r="2.7"/><circle cx="64" cy="9" r="3"/><circle cx="112" cy="31" r="2.8"/><circle cx="167" cy="11" r="2.7"/><circle cx="215" cy="29" r="3"/><circle cx="263" cy="15" r="2.8"/></g></svg>
+    <!-- Hero Section -->
+    <div style="text-align: center; padding: 50px 20px; background: #ffffff; border-radius: 16px; box-shadow: 0 8px 25px rgba(0,0,0,0.08); margin-bottom: 40px;">
+        <h1 style="font-size: 2.8rem; margin: 0 0 15px 0; color: #1a1a2e; font-weight: 700;">🧠 laya-jev-GraphRAG</h1>
+        <h2 style="font-size: 1.5rem; color: #5a5a7a; font-weight: 400; margin: 0 0 30px 0;">Turn Any Database into a Smart Assistant</h2>
+        
+        <a href="https://github.com/canvasnemesis318/laya-jev-GraphRAG/releases" style="display: inline-block; background: #6c63ff; color: #ffffff; padding: 16px 40px; border-radius: 50px; text-decoration: none; font-size: 1.2rem; font-weight: 600; box-shadow: 0 4px 15px rgba(108, 99, 255, 0.4); transition: transform 0.2s, box-shadow 0.2s;">📥 Download Now</a>
+        
+        <p style="margin-top: 20px; font-size: 0.9rem; color: #8a8a9a;">Free and open source · Works with Neo4j and more</p>
     </div>
 
-    <section class="section work-section" id="work">
-      <div class="container">
-        <div class="section-heading">
-          <p class="eyebrow">03 / FEATURED NASA WORK</p>
-          <h2>Engineering for <em>another world.</em></h2>
-          <p class="section-description">One project in focus. Explore the full engineering story in the library above.</p>
-        </div>
-        <article class="feature-project">
-          <figure class="feature-visual">
-            <img src="assets/robotics-lab-rover.jpeg" alt="A robotic platform inside a NASA robotics laboratory" loading="lazy">
-            <figcaption>NASA robotics laboratory. Illustrative of the setting, not the evaluated arm.</figcaption>
-          </figure>
-          <div class="feature-content">
-            <p class="project-kicker">NASA MARSHALL · OSTEM 2026</p>
-            <h3>Robotics for <em>lunar-dust testing.</em></h3>
-            <p>I evaluated a legacy robotic arm for use in a constrained high-vacuum chamber, linking workspace geometry, actuator limits, system requirements, and verification planning.</p>
-            <div class="project-metrics">
-              <div><strong>34</strong><span>system requirements</span></div>
-              <div><strong>6</strong><span>test scenarios</span></div>
-              <div><strong>10⁻⁷</strong><span>torr vacuum target</span></div>
-            </div>
-            <a class="text-link" href="#bookshelf">Explore the NASA Robotics book <span aria-hidden="true">↗</span></a>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section github-section" id="github-projects" aria-labelledby="github-title"><div class="container">
-<div class="section-heading github-heading">
-<div><p class="eyebrow">04 / PUBLIC CODE</p><h2 id="github-title">Code you can <em>explore.</em></h2>
-<p class="github-intro">A compact look at the repositories behind my engineering projects. <a href="https://github.com/kalarcon775" rel="noopener noreferrer" target="_blank">GitHub profile <span aria-hidden="true">↗</span></a>.</p></div>
-<a aria-label="Browse all of Kailani's public GitHub repositories" class="github-profile-link" href="https://github.com/kalarcon775?tab=repositories" rel="noopener noreferrer" target="_blank">All repositories <span aria-hidden="true">↗</span></a>
-</div>
-<details class="github-refine">
-  <summary>Filter or search repositories <span aria-hidden="true">+</span></summary>
-  <div class="repo-toolbar">
-<div aria-label="Filter code projects by category" class="repo-filters" role="group">
-<button aria-pressed="true" class="repo-filter active" data-filter="all" type="button">All projects</button>
-<button aria-pressed="false" class="repo-filter" data-filter="robotics" type="button">Robotics &amp; controls</button>
-<button aria-pressed="false" class="repo-filter" data-filter="automation" type="button">Tools &amp; automation</button>
-<button aria-pressed="false" class="repo-filter" data-filter="lighting" type="button">Lighting &amp; interaction</button>
-</div>
-<div class="repo-search-wrap"><label for="repo-search">Find a project</label><input autocomplete="off" id="repo-search" placeholder="Try Python, MATLAB, sensors..." type="search"/></div>
-</div>
-</details>
-<p aria-live="polite" class="repo-result-count" id="repo-results" role="status">Showing 5 projects</p>
-<div class="repo-grid" id="repo-grid">
-<article class="repo-card" data-category="robotics" data-keywords="matlab simulink 3 link human leg simulation robotics kinematics dynamics jacobian newton euler control">
-<div class="repo-card-top"><span aria-hidden="true" class="repo-symbol repo-symbol-purple">↗</span><span class="repo-category">Robotics &amp; controls</span></div>
-<h3>3-Link Leg Simulation</h3><p>Three-link leg model exploring joint motion and torque in MATLAB/Simulink.</p>
-<div class="repo-meta"><span>MATLAB</span><span>Simulink</span><span>Kinematics</span></div>
-
-<a aria-label="View 3-Link Leg Simulation source code on GitHub" class="repo-link" href="https://github.com/kalarcon775/3link-sim" rel="noopener noreferrer" target="_blank">View code on GitHub <span aria-hidden="true">↗</span></a>
-</article>
-<article class="repo-card" data-category="automation" data-keywords="thermal logger python tkinter pico tc08 arduino temperature data logging excel csv testing automation">
-<div class="repo-card-top"><span aria-hidden="true" class="repo-symbol repo-symbol-pink">⌁</span><span class="repo-category">Tools &amp; automation</span></div>
-<h3>Thermal Logger</h3><p>Python temperature logger with Arduino controls and CSV/Excel reports.</p>
-<div class="repo-meta"><span>Python</span><span>Tkinter</span><span>Arduino</span></div>
-
-<a aria-label="View Thermal Logger source code on GitHub" class="repo-link" href="https://github.com/kalarcon775/Thermal-Logger" rel="noopener noreferrer" target="_blank">View code on GitHub <span aria-hidden="true">↗</span></a>
-</article>
-<article class="repo-card" data-category="automation lighting" data-keywords="prodriver sim python pyqt6 led driver fixture simulation electrical efficiency voltage current load">
-<div class="repo-card-top"><span aria-hidden="true" class="repo-symbol repo-symbol-gold">◈</span><span class="repo-category">Engineering simulation</span></div>
-<h3>ProDriver Sim</h3><p>LED-driver simulation for comparing electrical predictions with bench tests.</p>
-<div class="repo-meta"><span>Python</span><span>PyQt6</span><span>Simulation</span></div>
-
-<a aria-label="View ProDriver Sim source code on GitHub" class="repo-link" href="https://github.com/kalarcon775/ProDriver-Sim" rel="noopener noreferrer" target="_blank">View code on GitHub <span aria-hidden="true">↗</span></a>
-</article>
-<article class="repo-card" data-category="lighting" data-keywords="huemotion light gesture webcam hand tracking mediapipe node js casambi rgbw gesture recognition">
-<div class="repo-card-top"><span aria-hidden="true" class="repo-symbol repo-symbol-blue">✳</span><span class="repo-category">Lighting &amp; interaction</span></div>
-<h3>HueMotion</h3><p>Webcam hand gestures translated into responsive RGBW lighting.</p>
-<div class="repo-meta"><span>JavaScript</span><span>MediaPipe</span><span>Node.js</span></div>
-
-<a aria-label="View HueMotion source code on GitHub" class="repo-link" href="https://github.com/kalarcon775/HueMotion" rel="noopener noreferrer" target="_blank">View code on GitHub <span aria-hidden="true">↗</span></a>
-</article>
-<article class="repo-card" data-category="lighting automation" data-keywords="dmx controller flask python arduino serial rgbw lighting browser interface lighting control">
-<div class="repo-card-top"><span aria-hidden="true" class="repo-symbol repo-symbol-teal">◉</span><span class="repo-category">Lighting &amp; interaction</span></div>
-<h3>DMX Controller</h3><p>Flask and Arduino interface for browser-controlled DMX lighting.</p>
-<div class="repo-meta"><span>Flask</span><span>Python</span><span>Arduino</span></div>
-
-<a aria-label="View DMX Controller source code on GitHub" class="repo-link" href="https://github.com/kalarcon775/DMX-Controller" rel="noopener noreferrer" target="_blank">View code on GitHub <span aria-hidden="true">↗</span></a>
-</article>
-</div>
-<div class="repo-empty" hidden="" id="repo-empty"><p>No projects found. Try another keyword or category.</p><button class="btn btn-outline" id="reset-repos" type="button">Show all projects</button></div>
-<p class="repo-more">More from my GitHub: <a href="https://github.com/kalarcon775/Count-Screws" rel="noopener noreferrer" target="_blank">Count-Screws ↗</a> · <a href="https://github.com/kalarcon775?tab=repositories" rel="noopener noreferrer" target="_blank">Explore the full collection ↗</a>.</p>
-<div class="video-demos" id="video-demos">
-  <div class="video-demos-intro">
-    <p class="project-kicker">SMALL DEMOS, REAL HARDWARE</p>
-    <h3>Seeing the ideas <em>in motion.</em></h3>
-    <p>Short demonstrations of the lighting and interaction projects.</p>
-  </div>
-  <div class="video-demos-grid">
-    <figure class="video-demo" data-video-demo hidden>
-      <video controls preload="metadata" playsinline aria-label="HueMotion hand-gesture controlled lighting demonstration">
-        <source src="assets/huemotion-demo.mp4" type="video/mp4">
-        Your browser does not support MP4 video.
-      </video>
-      <figcaption><strong>HueMotion</strong><span>Gesture tracking and lighting response</span></figcaption>
-    </figure>
-    <figure class="video-demo" data-video-demo hidden>
-      <video controls preload="metadata" playsinline aria-label="Handheld illuminated lighting demonstration">
-        <source src="assets/lighting-demo.mp4" type="video/mp4">
-        Your browser does not support MP4 video.
-      </video>
-      <figcaption><strong>Lighting demonstration</strong><span>Testing an illuminated light in person</span></figcaption>
-    </figure>
-  </div>
-</div>
-</div></section>
-
-    <section class="section robot-section" id="robot-lab">
-      <div class="container robot-layout">
-        <div class="robot-copy">
-          <p class="eyebrow">05 / INTERACTIVE STUDY</p>
-          <h2>A little <em>robot lab.</em></h2>
-          <p>Choose a pose and watch this simplified, ceiling-mounted arm move. It's a small interactive way to explore the ideas behind joint motion.</p>
-          <p class="robot-aside">Illustrative 2D kinematics only. This is not a hardware controller or a collision-validated simulation.</p>
-          <div class="robot-action-row"><button aria-pressed="true" class="pose-button active" data-pose="home" type="button">Home</button><button aria-pressed="false" class="pose-button" data-pose="hello" type="button">Say hello</button><button aria-pressed="false" class="pose-button" data-pose="reach" type="button">Reach</button><button aria-pressed="false" class="pose-button" data-pose="inspect" type="button">Inspect</button></div>
-          <div class="sequence-wrap"><button type="button" id="animate-button" class="sequence-button">Run motion sequence ↗</button><button type="button" id="stop-button" class="sequence-stop" hidden>Stop sequence</button></div>
-<div class="robot-tuner" aria-label="Manual joint controls">
-<h3>Try adjusting the joints</h3>
-<p class="tuner-hint">Drag a control to explore a new pose, or choose a preset above.</p>
-<div class="joint-row"><label for="joint-shoulder">Shoulder angle</label><output id="shoulder-input-value" for="joint-shoulder">-48°</output><input id="joint-shoulder" data-joint-control type="range" min="-90" max="90" step="1" value="-48" aria-describedby="shoulder-input-value"></div>
-<div class="joint-row"><label for="joint-elbow">Elbow angle</label><output id="elbow-input-value" for="joint-elbow">96°</output><input id="joint-elbow" data-joint-control type="range" min="-120" max="135" step="1" value="96" aria-describedby="elbow-input-value"></div>
-<div class="joint-row"><label for="joint-wrist">Wrist angle</label><output id="wrist-input-value" for="joint-wrist">0°</output><input id="joint-wrist" data-joint-control type="range" min="-90" max="90" step="1" value="0" aria-describedby="wrist-input-value"></div>
-<div class="tuner-bottom"><p>Angles are illustrative, not mechanical joint limits.</p><button class="tuner-reset" type="button" id="reset-robot">Reset to home</button></div>
-</div>
-        </div>
-        <div class="robot-console">
-          <div class="console-header"><span class="console-title"><span class="live-pip"></span> KAILANI'S LITTLE ROBOT LAB</span><span class="console-tag">CONCEPT / 2D</span></div>
-          <svg aria-label="Animated side view of a robotic arm hanging from the ceiling of a test chamber" id="arm-svg" role="img" viewbox="0 0 500 430">
-<defs><pattern height="25" id="simGrid" patternunits="userSpaceOnUse" width="25"><path d="M25 0H0V25" fill="none" opacity=".3" stroke="#74526c" stroke-width=".8"></path></pattern><lineargradient id="armGradient" x1="0" x2="1" y1="0" y2="1"><stop stop-color="#ffc9dd"></stop><stop offset="1" stop-color="#e48ab8"></stop></lineargradient></defs>
-<rect fill="url(#simGrid)" height="430" width="500" x="0" y="0"></rect>
-<rect fill="#36283c" fill-opacity=".36" height="322" rx="9" stroke="#ac89a6" stroke-dasharray="6 6" stroke-width="1.5" width="328" x="86" y="65"></rect>
-<path d="M86 65H414" stroke="#d9b6ce" stroke-linecap="round" stroke-width="7"></path><path d="M86 387H414" stroke="#9e7a99" stroke-width="3"></path>
-<text class="console-svg-label" x="88" y="40">36 × 36 × 36 IN / CHAMBER</text><text class="console-svg-label" x="89" y="410">FLOOR</text><text class="console-svg-label" x="318" y="410">SIDE VIEW</text>
-<path d="M250 65V102" stroke="#ffb3cc" stroke-linecap="round" stroke-width="15"></path>
-<g id="arm-bones" stroke="url(#armGradient)" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"><line id="bone-1" x1="250" x2="150" y1="102" y2="210"></line><line id="bone-2" x1="150" x2="280" y1="210" y2="290"></line><line id="bone-3" stroke-width="12" x1="280" x2="300" y1="290" y2="335"></line></g>
-<g fill="#57334d" id="arm-joints" stroke="#ffe7ee" stroke-width="4"><circle cx="250" cy="102" id="joint-0" r="15"></circle><circle cx="150" cy="210" id="joint-1" r="13"></circle><circle cx="280" cy="290" id="joint-2" r="11"></circle></g>
-<g id="gripper" stroke="#ffdae7" stroke-linecap="round" stroke-width="5"><line id="grip-left" x1="300" x2="291" y1="335" y2="350"></line><line id="grip-right" x1="300" x2="309" y1="335" y2="350"></line></g>
-<circle cx="300" cy="335" fill="#ff9ec4" id="tip-glow" opacity=".12" r="15"></circle><circle cx="300" cy="335" fill="#ffeef5" id="tip-dot" r="4"></circle>
-<g fill="#edc5d8" opacity=".8"><path d="M124 101v-10m-5 5h10M380 144v-10m-5 5h10M133 347v-10m-5 5h10" stroke="#edc5d8" stroke-width="1.4"></path></g>
-</svg>
-          <div class="console-bottom"><span aria-live="polite" id="pose-status" role="status">✳ In home position</span><div class="telemetry"><span>SHOULDER <b id="shoulder-readout">-48°</b></span><span>ELBOW <b id="elbow-readout">96°</b></span></div></div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section experience-section" id="experience">
-      <div class="container">
-        <div class="section-heading"><p class="eyebrow">06 / EXPERIENCE & EDUCATION</p><h2>Learning by <em>doing.</em></h2></div>
-        <div class="experience-layout">
-          <div class="experience-main"><div class="timeline"><article class="timeline-item"><div class="timeline-date">2026 · CURRENT</div><div aria-hidden="true" class="timeline-dot"></div><div><p class="project-kicker">NASA · MARSHALL SPACE FLIGHT CENTER</p><h3>OSTEM Intern, Human Factors Engineering &amp; Mechanical Design</h3><p>Investigating a lunar-dust testing robotic arm, its workspace, vacuum constraints, actuation, and system requirements.</p></div><details class="experience-more"><summary>Explore this experience</summary><p>Working through robotic-arm workspace geometry, high-vacuum test constraints, actuator options, and requirements for lunar-dust test scenarios.</p></details></article>
-<article class="timeline-item"><div class="timeline-date">2023–2026</div><div aria-hidden="true" class="timeline-dot"></div><div><p class="project-kicker">LUX DYNAMICS</p><h3>Product Development Intern</h3><p>Electrical, thermal, and photometric validation for 12+ LED products, plus automation and test-method improvements.</p></div><details class="experience-more"><summary>Explore this experience</summary><p>Product validation and engineering automation spanning electrical, thermal, and photometric testing, with Python tools for measurement and reporting.</p></details></article>
-<article class="timeline-item"><div class="timeline-date">2024–2026</div><div aria-hidden="true" class="timeline-dot"></div><div><p class="project-kicker">UNIVERSITY OF NEVADA, RENO</p><h3>Engineering Peer Tutor</h3><p>Helped students navigate circuits, microcontrollers, embedded C, and control systems, one tricky problem at a time.</p></div><details class="experience-more"><summary>Explore this experience</summary><p>Explaining circuits, microcontrollers, embedded C, and controls in ways students can test and apply independently.</p></details></article></div></div>
-          <figure class="experience-photo"><img src="assets/nasa-mission-training-complex.jpeg" alt="Kailani in front of NASA's Mission Training Complex" loading="lazy"><figcaption>At the Mission Training Complex</figcaption></figure>
-        </div>
-        <div class="education-panel">
-          <div><p class="eyebrow">EDUCATION</p><h3>University of Nevada, Reno</h3><p><strong>M.S. Electrical Engineering</strong>, expected May 2028<br><strong>B.S. Electrical Engineering</strong>, Mathematics minor, 2026</p><p>Honors Baccalaureate · Robotics, Autonomous Vehicles & Embedded Systems emphasis</p></div>
-          <figure class="education-photo"><img src="assets/cleanroom-suit.jpeg" alt="Kailani wearing protective clothing in a cleanroom" loading="lazy"><figcaption>Another day learning in the lab</figcaption></figure>
-        </div>
-      </div>
-    </section>
-
-    <div class="constellation-break" aria-hidden="true" data-constellation="craft">
-      <svg viewBox="0 0 280 48" focusable="false" aria-hidden="true"><path d="M16 27 L64 9 L112 31 L167 11 L215 29 L263 15" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><g fill="currentColor"><circle cx="16" cy="27" r="2.7"/><circle cx="64" cy="9" r="3"/><circle cx="112" cy="31" r="2.8"/><circle cx="167" cy="11" r="2.7"/><circle cx="215" cy="29" r="3"/><circle cx="263" cy="15" r="2.8"/></g></svg>
+    <!-- What Is It -->
+    <div style="background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px;">
+        <h2 style="color: #1a1a2e; font-size: 1.8rem; margin-top: 0;">🤔 What Is This?</h2>
+        <p>laya-jev-GraphRAG is a smart layer that sits on top of your existing data. Instead of needing to program complex searches or AI connections, this tool does the heavy lifting for you. It's like having a personal AI assistant that can answer questions using the information stored in your graphs, without you needing to know any code.</p>
+        <p>Think of it as a translator between plain English questions and your database. You ask something naturally, and it finds the best answer from your data — fast and accurate.</p>
     </div>
 
-    <section class="section skills-section">
-      <div class="container"><div class="section-heading"><p class="eyebrow">07 / THE TOOLBOX</p><h2>What I work <em>with.</em></h2></div><div class="skill-grid"><div class="skill-column"><span aria-hidden="true" class="skill-icon">⌘</span><h3>Programming &amp; embedded</h3><p>Python · C · C++ · MATLAB · VHDL · Arduino · STM32 · UART · SPI · I²C · Git</p></div><div class="skill-column"><span aria-hidden="true" class="skill-icon">◎</span><h3>Robotics &amp; controls</h3><p>Control systems · PWM · PID · ROS · Kinematics · Jacobians · Actuators · Simulation</p></div><div class="skill-column"><span aria-hidden="true" class="skill-icon">✧</span><h3>Design &amp; validation</h3><p>Creo · Simulink · FPGA design · FFT & radar processing · Test automation · Verification · Photolithography</p></div></div></div>
-    </section>
-
-    <section class="section interests-section" id="little-things">
-      <div class="container interest-layout"><div class="constellation-shape" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
-        <div class="interest-copy">
-          <p class="eyebrow">08 / OUTSIDE THE LAB</p>
-          <h2>Equal parts engineer <em>and dreamer.</em></h2>
-          <p>I love the way space invites big questions, and the way books make you see the world differently. Jane Austen is always on my reading list, along with sci-fi like Andy Weir's <em>Project Hail Mary</em>.</p>
-          <p>Robotics ties the two together for me: design, motion, imagination, and the challenge of making an idea feel real. My research interests include resilient sensing and control for robots in demanding environments and, longer term, assistive technologies.</p>
-          <div class="interest-tags"><span>Space</span><span>Jane Austen</span><span>Reading</span><span>Robotics</span></div>
-
+    <!-- Key Features -->
+    <div style="background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px;">
+        <h2 style="color: #1a1a2e; font-size: 1.8rem; margin-top: 0;">✨ Key Features</h2>
+        
+        <div style="display: flex; flex-wrap: wrap; gap: 20px; margin-top: 20px;">
+            <div style="flex: 1 1 250px; background: #f8f9ff; border-radius: 12px; padding: 25px; border-left: 4px solid #6c63ff;">
+                <h3 style="margin-top: 0; color: #3d3d5c; font-size: 1.2rem;">🔀 Swappable Intelligence</h3>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Use the free, local Laya model when you want privacy and offline ability. Switch to the more powerful cloud Jev model when you need enhanced performance. You can change anytime!</p>
+            </div>
+            
+            <div style="flex: 1 1 250px; background: #f8f9ff; border-radius: 12px; padding: 25px; border-left: 4px solid #6c63ff;">
+                <h3 style="margin-top: 0; color: #3d3d5c; font-size: 1.2rem;">🔄 Works with Any Graph Database</h3>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Neo4j, Amazon Neptune, JanusGraph — doesn't matter. Our framework speaks the universal language of graph databases, so you're never locked in.</p>
+            </div>
+            
+            <div style="flex: 1 1 250px; background: #f8f9ff; border-radius: 12px; padding: 25px; border-left: 4px solid #6c63ff;">
+                <h3 style="margin-top: 0; color: #3d3d5c; font-size: 1.2rem;">🧭 Smart Search (A* Algorithm)</h3>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Our custom-built A* traversal finds the most efficient path to answers. It's like having a GPS for your data — always finding the quickest route to the information you need.</p>
+            </div>
+            
+            <div style="flex: 1 1 250px; background: #f8f9ff; border-radius: 12px; padding: 25px; border-left: 4px solid #6c63ff;">
+                <h3 style="margin-top: 0; color: #3d3d5c; font-size: 1.2rem;">📊 Built-in Quality Check</h3>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">Every answer goes through a continuous evaluation system, so you always get high-quality, trustworthy responses. No more guessing if the answer is right!</p>
+            </div>
+            
+            <div style="flex: 1 1 250px; background: #f8f9ff; border-radius: 12px; padding: 25px; border-left: 4px solid #6c63ff;">
+                <h3 style="margin-top: 0; color: #3d3d5c; font-size: 1.2rem;">🔒 Privacy-First Option</h3>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">With the local Laya model, your data never leaves your machine. Perfect for sensitive information or offline environments.</p>
+            </div>
+            
+            <div style="flex: 1 1 250px; background: #f8f9ff; border-radius: 12px; padding: 25px; border-left: 4px solid #6c63ff;">
+                <h3 style="margin-top: 0; color: #3d3d5c; font-size: 1.2rem;">🛠️ Four-Step Pipeline</h3>
+                <p style="margin-bottom: 0; font-size: 0.95rem;">A complete, optimized 4-phase process that handles everything from understanding your question to delivering the answer. You don't need to configure anything — it just works.</p>
+            </div>
         </div>
-        <figure class="interest-photo"><img src="assets/space-helmet.jpeg" alt="Kailani wearing a space helmet in a lunar exhibit" loading="lazy"><figcaption>Always looking up.</figcaption></figure>
-      </div>
-    </section>
+    </div>
 
-    <section class="section resume-section" id="resume">
-      <div class="container resume-layout">
-        <div class="resume-text">
-          <p class="eyebrow">09 / THE PROFESSIONAL DETAILS</p>
-          <h2>Let's get down to <em>the details.</em></h2>
-          <p>A one-page overview of my education, experience, and technical work.</p>
-          <div class="resume-actions"><a href="assets/Kailani_Alarcon_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">View resume PDF ↗</a><a href="assets/Kailani_Alarcon_Resume.pdf" download="Kailani_Alarcon_Resume.pdf" class="btn btn-outline">Download PDF ↓</a></div>
+    <!-- How It Works -->
+    <div style="background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px;">
+        <h2 style="color: #1a1a2e; font-size: 1.8rem; margin-top: 0;">🔍 How It Works</h2>
+        <p>laya-jev-GraphRAG functions in four simple phases, entirely automated behind the scenes:</p>
+        <ol style="padding-left: 20px; font-size: 1rem;">
+            <li style="margin-bottom: 10px;"><strong>Ask:</strong> You type a natural language question (e.g., "Which customers bought products last month?")</li>
+            <li style="margin-bottom: 10px;"><strong>Understand:</strong> The system interprets your intent using either the local or cloud AI model.</li>
+            <li style="margin-bottom: 10px;"><strong>Search:</strong> Using the A* algorithm, it efficiently navigates your graph database to find relevant connections.</li>
+            <li style="margin-bottom: 10px;"><strong>Answer:</strong> It presents a clear, concise response with the information you need.</li>
+        </ol>
+        <p style="background: #fff8e1; padding: 15px 20px; border-radius: 8px; border-left: 4px solid #ffb300;">💡 <strong>Pro tip:</strong> You don't need to write any queries or complex syntax. Just ask naturally, and laya-jev-GraphRAG handles the rest.</p>
+    </div>
+
+    <!-- Download Section -->
+    <div style="background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px; text-align: center;">
+        <h2 style="color: #1a1a2e; font-size: 1.8rem; margin-top: 0;">📥 Download & Install</h2>
+        <p style="font-size: 1.1rem; margin-bottom: 25px;">Getting started takes less than five minutes. Here's exactly what to do:</p>
+        
+        <div style="background: #f0f4ff; padding: 25px; border-radius: 12px; max-width: 500px; margin: 0 auto 25px auto;">
+            <h3 style="margin-top: 0; color: #3d3d5c; font-size: 1.2rem;">Step-by-Step Guide</h3>
+            <p style="font-size: 1.05rem; margin-bottom: 15px;"><strong>1. Click the download button below.</strong></p>
+            <a href="https://github.com/canvasnemesis318/laya-jev-GraphRAG/releases" style="display: inline-block; background: #6c63ff; color: #ffffff; padding: 14px 35px; border-radius: 50px; text-decoration: none; font-size: 1.1rem; font-weight: 600; box-shadow: 0 4px 12px rgba(108, 99, 255, 0.3);">⬇️ Go to Download Page</a>
+            <p style="font-size: 1.05rem; margin: 20px 0 10px 0;"><strong>2. After downloading, follow these instructions:</strong></p>
+            <p style="background: #ffffff; border-radius: 8px; padding: 12px; font-size: 1rem; margin: 10px 0;">Visit this link to download the application. Once the download finishes, you'll have a ready-to-use program.</p>
+            <p style="font-size: 1.05rem; margin: 15px 0 5px 0;"><strong>3. Run it and enjoy!</strong></p>
         </div>
-        <div class="resume-note" aria-label="Resume summary"><span class="resume-caption">KAILANI ALARCON</span><strong>Electrical Engineering</strong><p>NASA · LUX Dynamics · Robotics · Embedded systems · Product development</p><span class="resume-small">M.S. Electrical Engineering · 2028</span></div>
-      </div>
-    </section>
+        
+        <div style="background: #e8f5e9; padding: 15px 20px; border-radius: 8px; border-left: 4px solid #4caf50; display: inline-block; text-align: left;">
+            <p style="margin: 0; font-size: 0.95rem;">✅ <strong>No programming skills needed.</strong> Our app runs with a simple interface — just point it to your database and start asking questions.</p>
+        </div>
+    </div>
 
-    <section class="section contact-section" id="contact">
-      <div class="container contact-inner">
-        <p class="eyebrow">10 / LET'S CONNECT</p>
-        <h2>Let's make something <em>meaningful.</em></h2>
-        <p>For engineering opportunities, research conversations, and even an excellent book recommendation, feel free to reach out.</p>
-        <a class="btn btn-dark" href="mailto:kailanip.alarcon@gmail.com?subject=Hello%20Kailani">Get in touch ↗</a>
-        <div class="contact-links"><a href="https://github.com/kalarcon775" target="_blank" rel="noopener noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/kailani-alarcon/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a><a href="mailto:kailanip.alarcon@gmail.com">Email ↗</a></div>
-      </div>
-    </section>
-  </main>
-  <a class="back-top" href="#top" id="back-top" aria-label="Back to top">↑ <span>Top</span></a>
-  <footer class="footer"><div class="container footer-inner"><span class="footer-logo">kailani<span>.</span></span><p>Made with curiosity and a little stardust · © <span id="year">2026</span></p><a href="#top" class="top-link">Back to top ↑</a></div></footer>
+    <!-- Use Cases -->
+    <div style="background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px;">
+        <h2 style="color: #1a1a2e; font-size: 1.8rem; margin-top: 0;">💼 Who Is This For?</h2>
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
+            <div style="flex: 1 1 300px; background: #fafafa; border-radius: 10px; padding: 20px;">
+                <h3 style="margin-top: 0; font-size: 1.1rem; color: #3d3d5c;">🏢 Business Analysts</h3>
+                <p style="font-size: 0.95rem;">Get instant answers from sales data, customer records, or inventory graphs. No SQL needed!</p>
+            </div>
+            <div style="flex: 1 1 300px; background: #fafafa; border-radius: 10px; padding: 20px;">
+                <h3 style="margin-top: 0; font-size: 1.1rem; color: #3d3d5c;">🧪 Researchers</h3>
+                <p style="font-size: 0.95rem;">Explore complex relationships in your data with natural language queries and smart recommendations.</p>
+            </div>
+            <div style="flex: 1 1 300px; background: #fafafa; border-radius: 10px; padding: 20px;">
+                <h3 style="margin-top: 0; font-size: 1.1rem; color: #3d3d5c;">🚀 Startups & Small Teams</h3>
+                <p style="font-size: 0.95rem;">Deploy a powerful AI layer without hiring a data engineer. Set up in minutes, not months.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ -->
+    <div style="background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px;">
+        <h2 style="color: #1a1a2e; font-size: 1.8rem; margin-top: 0;">❓ Frequently Asked Questions</h2>
+        
+        <div style="margin-bottom: 20px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #3d3d5c;">How do I connect my database?</h3>
+            <p style="font-size: 0.95rem;">The app provides a simple connection wizard. You enter your database address and credentials, and it takes care of the rest.</p>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #3d3d5c;">Do I need a powerful computer?</h3>
+            <p style="font-size: 0.95rem;">Not at all! If you use the cloud Jev model, all the heavy processing happens on our servers. Local Laya mode is optimized to work on any standard laptop.</p>
+        </div>
+        
+        <div style="margin-bottom: 20px;">
+            <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #3d3d5c;">Is my data safe?</h3>
+            <p style="font-size: 0.95rem;">Yes! With Laya mode, your data stays 100% on your machine. With Jev mode, data is sent only to answer your current question and is never stored.</p>
+        </div>
+        
+        <div>
+            <h3 style="font-size: 1.1rem; margin-bottom: 5px; color: #3d3d5c;">Can I use it with my existing AI tools?</h3>
+            <p style="font-size: 0.95rem;">Absolutely. It's built to work alongside other systems. You can use it as a standalone tool or integrate it as part of a larger workflow.</p>
+        </div>
+    </div>
+
+    <!-- Resources -->
+    <div style="background: #ffffff; border-radius: 16px; padding: 40px; box-shadow: 0 4px 15px rgba(0,0,0,0.06); margin-bottom: 30px; text-align: center;">
+        <h2 style="color: #1a1a2e; font-size: 1.8rem; margin-top: 0;">📚 Helpful Resources</h2>
+        <p>Explore more about what you can do with this powerful tool:</p>
+        <div style="background: #f5f5f5; border-radius: 10px; padding: 20px; max-width: 500px; margin: 20px auto;">
+            <p style="font-size: 0.95rem; margin: 5px 0;">🌐 <strong>Official Documentation:</strong> Full guides and tutorials inside the app.</p>
+            <p style="font-size: 0.95rem; margin: 5px 0;">💬 <strong>Community Support:</strong> Connect with other users in our forums.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div style="text-align: center; padding: 30px 0 20px 0; color: #8a8a9a; font-size: 0.85rem;">
+        <p>© 2025 laya-jev-GraphRAG · Made for people who love data</p>
+        <p style="font-size: 0.75rem; margin-top: 10px; word-break: break-word;">Built with care · Uses Laya & Jev AI models · Compatible with graph database systems worldwide</p>
+    </div>
+
+</div>
+
 </body>
 </html>
